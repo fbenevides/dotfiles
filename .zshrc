@@ -7,6 +7,7 @@ DISABLE_UPDATE_PROMPT='true'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 alias gst='git status'
 alias gc='git commit'
+alias gp='git push'
 
 alias d='docker'
 alias dc='docker compose'

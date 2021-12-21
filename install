@@ -1,9 +1,6 @@
 #/bin/bash
+
 cp .zshrc ~/.zshrc
+cp .gitconfig ~/.gitconfig
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-brew upgrade
-brew bundle --file=Brewfile
-
+zsh

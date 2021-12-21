@@ -1,0 +1,28 @@
+[user]
+  name = fbenevides
+  email = me@benevides.pro
+[core]
+  editor = vi
+  excludesfile = ~/.gitignore
+  autocrlf = input
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[web]
+  browser = google-chrome
+[credential]
+  helper = osxkeychain
+[push]
+  default = simple
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/

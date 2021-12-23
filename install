@@ -1,6 +1,19 @@
 #/bin/bash
 
-cp .zshrc ~/.zshrc
-cp .gitconfig ~/.gitconfig
+grep -v 'export DOTFILES_ROOT=' .zshrc > .temp
+if [ "$TEMP" ]; then
+    echo $TEMP > .temp
+    mv .temp .zshrc
+fi
+
+if [ ! "$DOTFILES_ROOT" ]; then 
+    DOTFILES_ROOT=$(pwd -P)
+    echo "export DOTFILES_ROOT=$DOTFILES_ROOT" >> $DOTFILES_ROOT/.zshrc
+fi
+
+cp $DOTFILES_ROOT/.zshrc ~/.zshrc
+cp $DOTFILES_ROOT/.gitconfig ~/.gitconfig
+
+rm -f .temp
 
 zsh

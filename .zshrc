@@ -9,6 +9,7 @@ alias gst='git status'
 alias gc='git commit'
 alias gp='git push'
 alias gn='git checkout -b'
+alias gpm='git pull origin master'
 
 alias d='docker'
 alias dc='docker compose'

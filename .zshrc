@@ -14,6 +14,7 @@ alias gpm='git pull origin master'
 alias d='docker'
 alias dc='docker compose'
 alias dcl='docker rm -f $(docker ps -a -q) '
+alias dci='docker rmi $(docker images -a -q)'
 
 alias k='kubectl'
 

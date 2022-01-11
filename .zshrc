@@ -4,6 +4,12 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME='robbyrussell'
 DISABLE_UPDATE_PROMPT='true'
 
+ALIASES_FILE=~/.aliases
+if [ -f $ALIASES_FILE ]; then
+    echo "$ALIASES_FILE will be loaded."
+    source $ALIASES_FILE
+fi
+
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 alias gst='git status'
 alias gc='git commit'

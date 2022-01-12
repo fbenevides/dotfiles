@@ -26,3 +26,6 @@
   cmd = code --wait --diff $LOCAL $REMOTE
 [url "ssh://git@github.com/"]
   insteadOf = https://github.com/
+[init]
+  defaultBranch = main
+

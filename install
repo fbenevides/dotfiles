@@ -5,6 +5,8 @@ export DOTFILES_ROOT=$(pwd -P)
 cp $DOTFILES_ROOT/.zshrc ~/.zshrc
 cp $DOTFILES_ROOT/.gitconfig ~/.gitconfig
 
+echo "export DOTFILES_ROOT=$(echo $DOTFILES_ROOT)" >> ~/.zshrc
+
 rm -f .temp
 
 zsh
